@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./commonStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <a href="./index.html">
+            <img src="./img/logo-white.png" alt="">
+            </a>
+        </div>
+        <ul class="nav" id="nav">
+            <ul class="navLogo">
+                <a href="./index.html">
+                     <img src="./img/logo-white.png" alt="">
+               </a>
+            </ul>
+
+            <li class="sociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/twitter-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+            </li>
+        </ul>
+        <div id="barContainer">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero page -->
+    <section class="hero gridSection">
+        <div class="sectionDesc">
+            <h1 class="headline">
+                Investing in your tomorrow's  <span class="cryptoText">STOCKS</span>.
+            </h1>
+            <p class="sub-headline">
+                "Every expert was once a beginner. Start your stock market journey today."
+            </p>
+           
+        </div>
+        <div class="sectionPic bouncepic" id="sectionPic">
+            <img src="./img/hero-image.png" alt="">
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <section>
+        <div class="carouselContainer">
+            <div class="eachCarousel eachCarouselBorder">
+                <img src="./img/google.jpg" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Google</h1>
+                    <p class="carouselPara">Google is a tech giant known for its search engine, Android OS, and cloud services under Alphabet Inc.</p>
+                    <div class="carouselPrice">
+                        <h3>$163.85</h3>
+                        <span class="rect"></span>
+                        
+                    </div>
+                    <button class="btn carouselBtn">Buy & Trade</button>
+                </article>
+            </div>
+    
+            <div class="eachCarousel">
+                <img src="./img/micro.png" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Microsoft</h1>
+                    <p class="carouselPara">Microsoft is a global leader in software, cloud computing, and productivity tools like Windows and Office.</p>
+                    <div class="carouselPrice">
+                        <h3>$391.85</h3>
+                        <span class="rect"></span>
+                        
+                    </div>
+                    <button class="btn carouselBtn">Buy & Trade</button>
+                </article>
+            </div>
+    
+            <div class="eachCarousel">
+                <img src="./img/apple.png" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Apple</h1>
+                    <p class="carouselPara">Apple is a premium tech company famous for its innovative hardware like the iPhone, Mac, and ecosystem integration.</p>
+                    <div class="carouselPrice">
+                        <h3>$209.28</h3>
+                        <span class="rect"></span>
+                        
+                    </div>
+                    <button class="btn carouselBtn">Buy & Trade</button>
+                </article>
+            </div>
+    
+            <div class="eachCarousel">
+                <img src="./img/google.jpg" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Google</h1>
+                    <p class="carouselPara">Google is a tech giant known for its search engine, Android OS, and cloud services under Alphabet Inc.</p>
+                    <div class="carouselPrice">
+                        <h3>$163.85</h3>
+                        <span class="rect"></span>
+                        
+                    </div>
+                    <button class="btn carouselBtn">Buy & Trade</button>
+                </article>
+            </div>
+    
+            <div class="eachCarousel">
+                <img src="./img/micro.png" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Microsoft</h1>
+                    <p class="carouselPara">Microsoft is a global leader in software, cloud computing, and productivity tools like Windows and Office.</p>
+                    <div class="carouselPrice">
+                        <h3>$391.85</h3>
+                        <span class="rect"></span>
+                       
+                    </div>
+                    <button class="btn carouselBtn">Buy & Trade</button>
+                </article>
+            </div>
+    
+            <div class="eachCarousel">
+                <img src="./img/apple.png" alt="">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Apple</h1>
+                    <p class="carouselPara">Apple is a premium tech company famous for its innovative hardware like the iPhone, Mac, and ecosystem integration</p>
+                    <div class="carouselPrice">
+                        <h3>$209.28</h3>
+                        <span class="rect"></span>
+                        
+                    </div>
+                    <button class="btn carouselBtn">Buy & Trade</button>
+                </article>
+            </div>
+        </div>
+        <div class="carouselIndicator">
+            <div class="indicator activeIndicator" onclick="slideCarousel(0)"></div>
+            <div class="indicator" onclick="slideCarousel(1)"></div>
+            <div class="indicator" onclick="slideCarousel(2)"></div>
+            <div class="indicator" onclick="slideCarousel(3)"></div>
+            <div class="indicator" onclick="slideCarousel(4)"></div>
+            <div class="indicator" onclick="slideCarousel(5)"></div>
+        </div>
+    </section>
+
+    <!-- Processes -->
+    <section class="gridSection">
+        <div class="sectionDesc processessDesc">
+            <h1 class="sectionHeader">Progeny</h1>
+            <p class="sectionPara">At <span class="cryptoText">Progeny</span> we do not charge any fees and we do not require 
+              any registration. You keep your privacy and your 
+              money.
+            </p>
+            <div class="eachProcesses">
+                <img src="./img/handshake-icon-white-line.svg" alt="handshake">
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Learn</h1>
+                    <p>
+                        Learn the art of investing from scratch. 
+                    </p>
+                </div>
+            </div>
+            <div class="eachProcesses">
+                <img src="./img/cart-icon-white-line.svg" alt="handshake">
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Buy & Sell</h1>
+                    <p>
+                        Buy smart, sell smarter—your stock market journey starts here.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionPic bouncepic processesPic" id="sectionPic">
+            <img src="./img/chain-process-img.png" alt="">
+        </div>
+    </section>
+
+    <!-- Markets -->
+    <section class="gridSection">
+        <div class="sectionDesc marketDesc">
+            <h1 class="sectionHeader">Markets at finger</h1>
+            <p class="sectionPara">"The stock market at your fingertips—learn, trade, and grow anytime, anywhere."
+            </p>
+            <div class="eachMarket">
+                <img src="./img/buy-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Buying</h1>
+                    <p class="darkPara">
+                        "Buy low, sell high—it’s not just a saying, it’s the game.
+Learn to trade stocks like a pro, without the boring stuff."
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/trading-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Trading</h1>
+                    <p class="darkPara">
+                        "Tap, trade, done—buying and selling stocks made seamless.
+Unlock real-time learning and smart trading, all at one place."
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/support-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Selling</h1>
+                    <p class="darkPara">
+                        "Know when to hold, and when to let go—selling is strategy, not luck.
+Master the timing, maximize the gains."
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/online-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Holding</h1>
+                    <p class="darkPara">
+                        "Sometimes the smartest move is to wait—holding builds true wealth.
+                        Patience in the market often beats quick wins."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionPic marketspicSection" id="sectionPic">
+           <h1 class="marketspicHeader">TOP STOCKS</h1>
+            <div class="marketsPicContainer">
+                <div class="marketPic marketPic1">
+                    <img src="./img/google.jpg" alt="">
+                    <article class="marketTitle">Google</article>
+                </div>
+    
+                <div class="marketPic marketPic2">
+                    <img src="./img/apple.png" alt="">
+                    <article class="marketTitle">Apple</article>
+                </div>
+    
+                <div class="marketPic marketPic3">
+                    <img src="./img/micro.png" alt="">
+                    <article class="marketTitle">Microsoft</article>
+                </div>
+    
+                <div class="marketPic marketPic4">
+                    <img src="./img/handshake-icon-white.svg" alt="">
+                    <article class="marketTitle">CONNECTING</article>
+                </div>
+            </div>
+            </div>
+    </section>
+<!-- real time stock-->
+ 
+    <div class="container">
+        <h1>📊 Real-Time Stock</h1>
+    
+        <div class="flex">
+          <input id="stockInput" type="text" placeholder="Stock Ticker (e.g. AAPL)" />
+          <button onclick="startRealtimeChart()" class="btn-blue">Start</button>
+        </div>
+    
+        <div class="flex">
+          <label><input type="checkbox" id="smaCheckbox" checked /> SMA</label>
+          <label><input type="checkbox" id="emaCheckbox" /> EMA</label>
+        </div>
+    
+        <canvas id="stockChart" height="120"></canvas>
+    
+        <div id="candlestickChartContainer" class="section">
+          <div id="candlestickChart"></div>
+        </div>
+    
+        <div class="section">
+          <h2>💰 Investment Overview</h2>
+          <p id="balanceDisplay">Balance: ₹100000</p>
+          <div class="flex">
+            <input id="investmentAmount" type="number" placeholder="Amount to invest" />
+            <button onclick="investInStock()" class="btn-green">Invest</button>
+            <button onclick="sellStock()" class="btn-red">Sell</button>
+          </div>
+          <p id="investmentStatus"></p>
+        </div>
+    
+        <div class="section">
+          <h2>📰 Latest News</h2>
+          <div id="newsContainer" class="space-y-4"></div>
+        </div>
+      </div>
+    
+
+    <!-- Dashboard -->
+   
+   
+
+  
+
+        <div class="footerCopyright">
+             <p>&copy; 2025 design and developed by <a href="#" class="developedBy">Progeny</a>.</p>
+        </div>
+    </footer>
+
+   
+
+    <script src="./script.js"></script>
+</body>
+</html>
